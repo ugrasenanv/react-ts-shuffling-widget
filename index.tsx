@@ -15,6 +15,9 @@ class App extends Component<AppProps, AppState> {
       name: 'React',
     };
   }
+  shuffleArray = (e) => {};
+
+  sortArray = (e) => {};
 
   render() {
     return (
@@ -23,8 +26,8 @@ class App extends Component<AppProps, AppState> {
         <main>
           <ul id="cube-container"></ul>
           <div className="btn-wrapper">
-            <button onClick="shuffleArray()">SHUFFLE</button>
-            <button onClick="sortArray()">SORT</button>
+            <button onClick={this.shuffleArray}>SHUFFLE</button>
+            <button onClick={this.sortArray}>SORT</button>
           </div>
         </main>
       </div>
